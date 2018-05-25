@@ -6,19 +6,11 @@ html body {
   height: 100%;
 }
 
-/* .container {
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-} */
-
 .text {
   margin-top: 30px;
   text-align: center;
-  font-weight: 900;
-  font-size: 6rem;
+  font-weight: 100;
+  font-size: 100px;
   color: #fafafa;
   font-family: "Josefin Sans", sans-serif;
   grid-column: 3/4;
@@ -33,9 +25,21 @@ html body {
 
 .container {
   display: grid;
-  grid-template-columns: 10% 20% auto 20% 10%;
+  grid-template-columns: 1fr 2fr 6fr 2fr 1fr;
   grid-template-rows: 25vh auto;
-  text-align: center;
+  justify-content: center;
+}
+
+.content {
+  grid-column: 2/5;
+  grid-row-start: 2;
+  color: #414141;
+  height: 40vh;
+  border: #fafafa solid;
+  opacity: 1;
+  transition: all 1s;
+  animation: appear 6s ease-in-out;
+  margin-top: 0vh;
 }
 
 @keyframes up {
@@ -47,5 +51,26 @@ html body {
   }
   100% {
     margin-top: 30px;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+    margin-top: 20vh;
+  }
+  85% {
+    opacity: 0;
+    margin-top: 20vh;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .text {
+    font-size: 70px;
+    grid-column: 2/5;
   }
 }
