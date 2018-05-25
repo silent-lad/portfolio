@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100i");
+
+html body {
+  font-family: "Roboto Mono", monospace;
+  background: #212121;
+  height: 100%;
+}
+
+/* .container {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+} */
+
+.text {
+  margin-top: 30px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 6rem;
+  color: #fafafa;
+  font-family: "Josefin Sans", sans-serif;
+  grid-column: 3/4;
+  transition: all 1s linear;
+  grid-row-start: 1;
+  animation: up 6s ease-in-out;
+}
+
+.dud {
+  color: #757575;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 10% 20% auto 20% 10%;
+  grid-template-rows: 25vh auto;
+  text-align: center;
+}
+
+@keyframes up {
+  0% {
+    margin-top: 35vh;
+  }
+  85% {
+    margin-top: 35vh;
+  }
+  100% {
+    margin-top: 30px;
+  }
+}
