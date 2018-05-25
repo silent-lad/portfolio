@@ -31,7 +31,7 @@ html body {
 }
 
 .content {
-  grid-column: 2/5;
+  grid-column: 1/6;
   grid-row-start: 2;
   color: #414141;
   height: 40vh;
@@ -68,7 +68,7 @@ html body {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 850px) {
   .text {
     font-size: 70px;
     grid-column: 2/5;
