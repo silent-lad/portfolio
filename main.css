@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100i");
+/* @import url("https://fonts.googleapis.com/css?family=Leckerli+One"); */
 
 /* ::-moz-selection {
   
@@ -21,7 +22,7 @@ html body {
   margin-top: 30px;
   text-align: center;
   font-weight: 100;
-  font-size: 100px;
+  font-size: 50px;
   color: #212121;
   font-family: "Josefin Sans", sans-serif;
   grid-column: 3/4;
@@ -33,35 +34,45 @@ html body {
 .dud {
   color: #757575;
 }
+.pic {
+  grid-column: 5/6;
+  /* max-width: 100%; */
+  max-height: 70vh;
+}
 
 .container {
   display: grid;
   grid-template-columns: 1fr 2fr 6fr 2fr 1fr;
-  grid-template-rows: 25vh;
+  /* grid-template-rows: 25vh ; */
   justify-content: center;
 }
 
 .content {
-  grid-column: 1/6;
-  grid-row-start: 2;
+  grid-column: 1/5;
+  /* grid-row-start: 1; */
   color: #414141;
-  height: 40vh;
-  border: #000 solid;
+  /* border: #000 solid; */
   /* background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAOklEQVQoU43MSwoAMAgD0eT+h7ZYaOlHo7N+DNHL2HAGgBWcyGcKbqTghTL4oQiG6IUpOqFEC5bI4QD8PAoKd9j4XwAAAABJRU5ErkJggg==); */
   opacity: 1;
   transition: all 1s;
   animation: appear 6s ease-in-out;
   margin-top: 0vh;
+  font-size: 3rem;
+  /* font-weight: bold; */
+  letter-spacing: 0.2ch;
 }
 
 @keyframes up {
   0% {
+    font-size: 100px;
     margin-top: 35vh;
   }
   85% {
+    font-size: 100px;
     margin-top: 35vh;
   }
   100% {
+    font-size: 50px;
     margin-top: 30px;
   }
 }
@@ -130,4 +141,103 @@ img:hover {
   font-family: sans-serif;
   font-weight: 900;
   color: rgba(219, 28, 28, 0.808);
+}
+
+.svg-wrapper {
+  height: 60px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 320px;
+}
+
+.shape {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  stroke: #000;
+}
+
+.svg-text {
+  color: #000;
+  font-family: "Roboto Condensed";
+  font-size: 22px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  position: relative;
+  left: 30%;
+  top: -48px;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 8px;
+  }
+}
+
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+
+p {
+  color: #000;
+}
+
+/* Set the font, lean the board, position it */
+#board {
+  /* font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; */
+  /* font-family: "Josefin Sans", sans-serif; */
+  font-family: Arial, Helvetica, sans-serif;
+  transform: perspective(350px) rotateX(25deg);
+  transform-origin: 50% 100%;
+  text-align: justify;
+  position: absolute;
+  margin-left: -9em;
+  font-weight: bold;
+  overflow: hidden;
+  font-size: 350%;
+  height: 50em;
+  width: 18em;
+  bottom: 0;
+  left: 50%;
+}
+
+#board:after {
+  position: absolute;
+  content: " ";
+  bottom: 60%;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+/* Set the scrolling animation and position it */
+#content {
+  animation: scroll 160s ease-out 6s;
+  position: absolute;
+  top: 100%;
+}
+
+#title,
+#subtitle {
+  text-align: center;
+}
+
+@keyframes scroll {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -130%;
+  }
 }
