@@ -196,7 +196,7 @@ p {
 /* Set the font, lean the board, position it */
 #board {
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-  transform: perspective(300px) rotateX(25deg);
+  transform: perspective(350px) rotateX(25deg);
   transform-origin: 50% 100%;
   text-align: justify;
   position: absolute;
@@ -221,7 +221,7 @@ p {
 
 /* Set the scrolling animation and position it */
 #content {
-  animation: scroll 70s linear 6s;
+  animation: scroll 160s linear 6s;
   position: absolute;
   top: 100%;
 }
