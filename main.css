@@ -223,7 +223,7 @@ p {
 
 /* Set the scrolling animation and position it */
 #content {
-  animation: scroll 160s ease-out 6s;
+  animation: scroll 120s linear 6s;
   position: absolute;
   top: 100%;
 }
@@ -238,6 +238,6 @@ p {
     top: 100%;
   }
   100% {
-    top: -130%;
+    top: -170%;
   }
 }
