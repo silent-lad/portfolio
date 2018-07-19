@@ -58,7 +58,7 @@ html body {
   animation: appear 6s ease-in-out;
   margin-top: 0vh;
   font-size: 3rem;
-  font-weight: 900;
+  /* font-weight: bold; */
   letter-spacing: 0.2ch;
 }
 
@@ -195,7 +195,9 @@ p {
 
 /* Set the font, lean the board, position it */
 #board {
-  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  /* font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; */
+  /* font-family: "Josefin Sans", sans-serif; */
+  font-family: Arial, Helvetica, sans-serif;
   transform: perspective(350px) rotateX(25deg);
   transform-origin: 50% 100%;
   text-align: justify;
@@ -221,7 +223,7 @@ p {
 
 /* Set the scrolling animation and position it */
 #content {
-  animation: scroll 160s linear 6s;
+  animation: scroll 160s ease-out 6s;
   position: absolute;
   top: 100%;
 }
@@ -236,6 +238,6 @@ p {
     top: 100%;
   }
   100% {
-    top: -170%;
+    top: -130%;
   }
 }
