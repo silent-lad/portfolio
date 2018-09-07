@@ -22,7 +22,7 @@ html body {
   margin-top: 30px;
   text-align: center;
   font-weight: 100;
-  font-size: 50px;
+  font-size: 4vw;
   color: #212121;
   font-family: "Josefin Sans", sans-serif;
   grid-column: 3/4;
@@ -40,15 +40,14 @@ html body {
   max-height: 70vh;
 }
 
-.container {
+/* .container {
   display: grid;
   grid-template-columns: 1fr 2fr 6fr 2fr 1fr;
-  /* grid-template-rows: 25vh ; */
+  /* grid-template-rows: 25vh ; 
   justify-content: center;
-}
+} */
 
 .content {
-  grid-column: 1/5;
   /* grid-row-start: 1; */
   color: #414141;
   /* border: #000 solid; */
@@ -60,6 +59,7 @@ html body {
   font-size: 3rem;
   /* font-weight: bold; */
   letter-spacing: 0.2ch;
+  width: 100%;
 }
 
 @keyframes up {
@@ -198,14 +198,14 @@ p {
   /* font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; */
   /* font-family: "Josefin Sans", sans-serif; */
   font-family: Arial, Helvetica, sans-serif;
-  transform: perspective(350px) rotateX(25deg);
+  transform: perspective(50vh) rotateX(25deg);
   transform-origin: 50% 100%;
   text-align: justify;
   position: absolute;
   margin-left: -9em;
   font-weight: bold;
   overflow: hidden;
-  font-size: 350%;
+  font-size: 5vw;
   height: 50em;
   width: 18em;
   bottom: 0;
