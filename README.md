@@ -1,2 +1,2 @@
 
-Self Portfolio UNDER DEVELOPMENT:- www.silentlad.tech
+Self Portfolio UNDER DEVELOPMENT:- silentlad.com
