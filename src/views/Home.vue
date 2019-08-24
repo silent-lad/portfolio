@@ -11,7 +11,7 @@ import HeroSection from "@/components/HeroSection.vue";
 export default {
   name: "home",
   components: {
-    Home
+    HeroSection
   }
 };
 </script>
