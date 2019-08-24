@@ -7,11 +7,14 @@
         <br />
         Welcome to my Portfolio.
         <br />
-        Find my &#128220; Blogs, &#9935; Projects and
+        Find my <a href="#" class="blogs">&#128220; Blogs</a>,
+        <a href="#" class="projects">&#9935; Projects</a> and
         <br />
-        &#128752;Ways to reach me.
+        <a href="#" class="contact">&#128752;Ways to reach me</a>.
       </p>
-      <img id="heroImage" src="../assets/img/heroLogo.png" alt="silentlad" />
+      <div class="imgWrapper">
+        <img id="heroImage" src="../assets/img/heroLogo.png" alt="silentlad" />
+      </div>
     </div>
   </div>
 </template>
@@ -40,10 +43,26 @@ export default {
       font-size: 60px;
       font-family: "Josefin Sans", sans-serif;
       line-height: 1.3;
+      a {
+        text-decoration: none;
+        color: white;
+        transition: all 0.3s;
+      }
+      .blogs:hover {
+        color: rgb(177, 38, 3);
+      }
+      .projects:hover {
+        color: rgb(52, 100, 255);
+      }
+      .contact:hover {
+        color: rgb(0, 179, 211);
+      }
     }
-    #heroImage {
-      display: block;
-      width: 28vw;
+    .imgWrapper {
+      height: 80vh;
+      img {
+        height: 100%;
+      }
     }
   }
 }
