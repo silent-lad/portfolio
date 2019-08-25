@@ -7,10 +7,17 @@
         <br />
         Welcome to my Portfolio.
         <br />
-        Find my <a href="#" class="blogs">&#128220; Blogs</a>,
-        <a href="#" class="projects">&#9935; Projects</a> and
+        Find my
+        <a href="https://medium.com/@silentlad" class="blogs">&#128220; Blogs</a
+        >,
+        <a href="https://github.com/silent-lad" class="projects"
+          >&#9935; Projects</a
+        >
+        and
         <br />
-        <a href="#" class="contact">&#128752;Ways to reach me</a>.
+        <a href="mailto:hi@silentlad.com" class="contact"
+          >&#128752;Ways to reach me</a
+        >.
       </p>
       <div class="imgWrapper">
         <img id="heroImage" src="../assets/img/heroLogo.png" alt="silentlad" />
