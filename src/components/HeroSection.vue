@@ -39,6 +39,11 @@ export default {
     align-items: center;
     padding: 5%;
     #whoami {
+      //   padding: 10px;
+      //   border: 0px solid red;
+      //   border-radius: 10px;
+      //   background: #ffffff21;
+      //   box-shadow: 10px 10px 50px #ffffff0c;
       color: #efefef;
       font-size: 60px;
       font-family: "Josefin Sans", sans-serif;
