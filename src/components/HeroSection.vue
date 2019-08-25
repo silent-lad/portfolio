@@ -8,9 +8,10 @@
         Welcome to my Portfolio.
         <br />
         Find my
-        <a href="https://medium.com/@silentlad" class="blogs">&#128220; Blogs</a
+        <a target="_blank" href="https://medium.com/@silentlad" class="blogs"
+          >&#128220; Blogs</a
         >,
-        <a href="https://github.com/silent-lad" class="projects"
+        <a target="_blank" href="https://github.com/silent-lad" class="projects"
           >&#9935; Projects</a
         >
         and
