@@ -3,7 +3,7 @@
     <div class="navbar"></div>
     <div class="description">
       <p id="whoami">
-        Hi, I am Silentlad
+        Hi, I am <span class="name">Silentlad</span>
         <br />
         Welcome to my Portfolio.
         <br />
@@ -46,12 +46,42 @@ export default {
     justify-content: space-between;
     align-items: center;
     padding: 5%;
+    @media screen and (max-width: 1000px) {
+      padding: 0;
+    }
+    .imgWrapper {
+      height: 80vh;
+      img {
+        height: 100%;
+      }
+      @media screen and (max-width: 1000px) {
+        position: absolute;
+        height: 10vh;
+        top: 20px;
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    }
     #whoami {
-      //   padding: 10px;
-      //   border: 0px solid red;
-      //   border-radius: 10px;
-      //   background: #ffffff21;
-      //   box-shadow: 10px 10px 50px #ffffff0c;
+      @media screen and (max-width: 1000px) {
+        padding: 5%;
+        font-size: 45px;
+        margin-top: 15vh;
+        .blogs {
+          color: rgb(177, 38, 3);
+        }
+        .projects {
+          color: rgb(52, 100, 255);
+        }
+        .contact {
+          color: rgb(0, 179, 211);
+        }
+      }
+      .name {
+        filter: drop-shadow(7px 7px 5px rgba(255, 255, 255, 0.733));
+      }
       color: #efefef;
       font-size: 60px;
       font-family: "Josefin Sans", sans-serif;
@@ -69,12 +99,6 @@ export default {
       }
       .contact:hover {
         color: rgb(0, 179, 211);
-      }
-    }
-    .imgWrapper {
-      height: 80vh;
-      img {
-        height: 100%;
       }
     }
   }

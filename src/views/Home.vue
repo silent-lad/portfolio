@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <HeroSection />
-    <Gist />
+    <!-- <Gist /> -->
   </div>
 </template>
 
