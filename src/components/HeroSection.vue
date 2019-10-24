@@ -28,9 +28,17 @@
 </template>
 
 <script>
+import VanillaTilt from "vanilla-tilt";
 export default {
   name: "HeroSection",
-  components: {}
+  components: {},
+  mounted() {
+    VanillaTilt.init(document.querySelector("#heroImage"), {
+      max: 10,
+      speed: 900,
+      scale: 1.05
+    });
+  }
 };
 </script>
 
