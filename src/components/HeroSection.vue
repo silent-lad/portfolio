@@ -67,6 +67,7 @@ export default {
         height: 100%;
       }
       .tiltEffect {
+        display: block;
         @media screen and (max-width: 1000px) {
           display: none;
         }
