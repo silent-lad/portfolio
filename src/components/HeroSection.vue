@@ -49,8 +49,7 @@ export default {
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100i");
 #heroSection {
-  background: #232323;
-  height: 100vh;
+  // height: 100%;
   width: 100vw;
   .description {
     display: flex;

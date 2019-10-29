@@ -1,7 +1,17 @@
 <template>
-  <div class="tilt">
+  <div
+    class="tilt data-tilt data-tilt-full-page-listening"
+    :style="{
+      'background-image':
+        'url(' + require('../assets/img/2_' + faceIndex + '.png') + ')'
+    }"
+  >
     <div class="tiltImageWrapper">
-      <img id="tiltImage" src="../assets/img/2.png" alt="silentlad" />
+      <img
+        id="tiltImage"
+        :src="require('../assets/img/1_' + XIndex + '.png')"
+        alt="silentlad"
+      />
     </div>
   </div>
 </template>
@@ -9,24 +19,37 @@
 import VanillaTilt from "vanilla-tilt";
 export default {
   name: "TiltHero",
+  data() {
+    return {
+      XIndex: 1,
+      faceIndex: 2
+    };
+  },
   components: {},
   mounted() {
     VanillaTilt.init(document.querySelector(".tilt"), {
       // reverse: true,
       max: 10,
       speed: 900,
-      scale: 1.1
+      scale: 1.1,
+      "full-page-listening": true
     });
+    setInterval(() => {
+      if (this.XIndex < 4) this.XIndex++;
+      else this.XIndex = 1;
+      // if (this.faceIndex < 3) this.faceIndex++;
+      // else this.faceIndex = 1;
+    }, 2500);
   }
 };
 </script>
-<style>
+<style lang="scss">
 .tilt {
   transform-style: preserve-3d;
   transform: perspective(2000px);
   /* width: 100vw; */
   /* height: 100vh; */
-  background-image: url("../assets/img/1.png");
+  /* background-image: url("../assets/img/1_3.png"); */
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
@@ -38,7 +61,7 @@ export default {
   flex-direction: column;
 }
 #tiltImage {
-  z-index: -3;
-  transform: translateZ(-30px);
+  // z-index: -3;
+  transform: translateZ(30px);
 }
 </style>

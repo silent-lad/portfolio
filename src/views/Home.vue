@@ -19,7 +19,7 @@ export default {
 };
 </script>
 <style lang="scss">
-.home {
+body {
   background: #232323;
 }
 </style>
