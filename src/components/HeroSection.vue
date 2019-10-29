@@ -2,6 +2,10 @@
   <div id="heroSection">
     <div class="navbar"></div>
     <div class="description">
+      <div class="imgWrapper">
+        <img id="heroImage" src="../assets/img/heroLogo.png" alt="silentlad" />
+        <Tilt class="tiltEffect" />
+      </div>
       <p id="whoami">
         Hi, I am <span class="name">Silentlad</span>
         <br />
@@ -20,10 +24,6 @@
           >&#128752;Ways to reach me</a
         >.
       </p>
-      <div class="imgWrapper">
-        <img id="heroImage" src="../assets/img/heroLogo.png" alt="silentlad" />
-        <Tilt class="tiltEffect" />
-      </div>
     </div>
   </div>
 </template>
@@ -89,10 +89,12 @@ export default {
       }
     }
     #whoami {
+      // margin-left: 20vh;
       @media screen and (max-width: 1000px) {
         padding: 5%;
         font-size: 45px;
         margin-top: 15vh;
+
         .blogs {
           color: rgb(177, 38, 3);
         }
