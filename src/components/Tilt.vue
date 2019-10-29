@@ -12,10 +12,10 @@ export default {
   components: {},
   mounted() {
     VanillaTilt.init(document.querySelector(".tilt"), {
-      reverse: true,
-      max: 20,
+      // reverse: true,
+      max: 10,
       speed: 900,
-      scale: 1.07
+      scale: 1.1
     });
   }
 };
@@ -24,8 +24,8 @@ export default {
 .tilt {
   transform-style: preserve-3d;
   transform: perspective(2000px);
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw; */
+  /* height: 100vh; */
   background-image: url("../assets/img/1.png");
   background-repeat: no-repeat;
   background-position: center;

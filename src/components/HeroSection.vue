@@ -22,6 +22,7 @@
       </p>
       <div class="imgWrapper">
         <img id="heroImage" src="../assets/img/heroLogo.png" alt="silentlad" />
+        <Tilt class="tiltEffect" />
       </div>
     </div>
   </div>
@@ -29,15 +30,18 @@
 
 <script>
 import VanillaTilt from "vanilla-tilt";
+import Tilt from "./Tilt";
 export default {
   name: "HeroSection",
-  components: {},
+  components: {
+    Tilt
+  },
   mounted() {
-    VanillaTilt.init(document.querySelector("#heroImage"), {
-      max: 10,
-      speed: 900,
-      scale: 1.05
-    });
+    // VanillaTilt.init(document.querySelector("#heroImage"), {
+    //   max: 10,
+    //   speed: 900,
+    //   scale: 1.1
+    // });
   }
 };
 </script>
@@ -62,6 +66,18 @@ export default {
       img {
         height: 100%;
       }
+      .tiltEffect {
+        @media screen and (max-width: 1000px) {
+          display: none;
+        }
+      }
+      #heroImage {
+        display: none;
+        @media screen and (max-width: 1000px) {
+          display: block;
+        }
+      }
+
       @media screen and (max-width: 1000px) {
         position: absolute;
         height: 10vh;
