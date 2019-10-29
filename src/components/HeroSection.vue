@@ -15,12 +15,13 @@
         <a target="_blank" href="https://medium.com/@silentlad" class="blogs"
           >&#128220; Blogs</a
         >,
-        <br />
+        <!-- <br /> -->
         <a target="_blank" href="https://github.com/silent-lad" class="projects"
           >&#9935; Projects</a
         >
-        and
         <br />
+        and
+
         <a href="mailto:hi@silentlad.com" class="contact"
           >&#128752;Ways to reach me</a
         >.
@@ -68,7 +69,7 @@ export default {
       }
       .tiltEffect {
         // margin-left: vw;
-        padding: 0 7vw;
+        padding: 0 5vw;
         display: block;
         @media screen and (max-width: 1000px) {
           display: none;
@@ -93,10 +94,7 @@ export default {
     }
     #whoami {
       // margin-left: 20vh;
-      text-align: right;
-      a {
-        background: #181818;
-      }
+      // text-align: right;
       @media screen and (max-width: 1000px) {
         padding: 5%;
         font-size: 45px;
@@ -124,14 +122,23 @@ export default {
         color: white;
         transition: all 0.3s;
       }
-      .blogs:hover {
+      .blogs {
         color: rgb(177, 38, 3);
       }
-      .projects:hover {
+      .projects {
         color: rgb(52, 100, 255);
       }
-      .contact:hover {
+      .contact {
         color: rgb(0, 179, 211);
+      }
+      .blogs:hover {
+        background: rgb(17, 17, 17);
+      }
+      .projects:hover {
+        background: rgb(17, 17, 17);
+      }
+      .contact:hover {
+        background: rgb(17, 17, 17);
       }
     }
   }
