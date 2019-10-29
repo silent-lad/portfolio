@@ -15,6 +15,7 @@
         <a target="_blank" href="https://medium.com/@silentlad" class="blogs"
           >&#128220; Blogs</a
         >,
+        <br />
         <a target="_blank" href="https://github.com/silent-lad" class="projects"
           >&#9935; Projects</a
         >
@@ -61,11 +62,13 @@ export default {
       padding: 0;
     }
     .imgWrapper {
-      height: 80vh;
+      height: 90vh;
       img {
         height: 100%;
       }
       .tiltEffect {
+        // margin-left: vw;
+        padding: 0 7vw;
         display: block;
         @media screen and (max-width: 1000px) {
           display: none;
@@ -90,6 +93,10 @@ export default {
     }
     #whoami {
       // margin-left: 20vh;
+      text-align: right;
+      a {
+        background: #181818;
+      }
       @media screen and (max-width: 1000px) {
         padding: 5%;
         font-size: 45px;
