@@ -1,7 +1,5 @@
 <template>
   <div
-    @mouseenter="hover = true"
-    @mouseleave="hover = false"
     class="tilt"
     :style="{
       'background-image':
@@ -10,6 +8,8 @@
   >
     <div class="tiltImageWrapper">
       <img
+        @mouseenter="hover = true"
+        @mouseleave="hover = false"
         id="tiltImage"
         :src="require('../assets/img/1_' + XIndex + '.png')"
         alt="silentlad"
@@ -29,19 +29,27 @@ export default {
     };
   },
   components: {},
+  watch: {
+    // hover(val) {
+    //   if (val) {
+    //     if (this.XIndex < 3) this.XIndex++;
+    //     else this.XIndex = 1;
+    //   }
+    // }
+  },
   mounted() {
     VanillaTilt.init(document.querySelector(".tilt"), {
       max: 10,
       speed: 900,
-      scale: 1.1
+      scale: 1.15
       // "full-page-listening": true
     });
     setInterval(() => {
       if (this.hover) {
-        this.XIndex = Math.ceil(Math.random() * 3);
-        // this.faceIndex = Math.ceil(Math.random() * 2);
+        if (this.XIndex < 3) this.XIndex++;
+        else this.XIndex = 1;
       }
-    }, 150);
+    }, 450);
   }
 };
 </script>

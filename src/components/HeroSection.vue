@@ -9,7 +9,7 @@
       <p id="whoami">
         Hi, I am <span class="name">Silentlad</span>
         <br />
-        Welcome to my Portfolio.
+        Welcome to my Site.
         <br />
         Find my
         <a target="_blank" href="https://medium.com/@silentlad" class="blogs"
