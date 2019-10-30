@@ -37,7 +37,7 @@ export default {
       // "full-page-listening": true
     });
     setInterval(() => {
-      if (!this.hover) {
+      if (this.hover) {
         this.XIndex = Math.ceil(Math.random() * 3);
         // this.faceIndex = Math.ceil(Math.random() * 2);
       }
@@ -74,6 +74,6 @@ export default {
 }
 #tiltImage {
   // z-index: -3;
-  transform: translateZ(30px);
+  transform: translateZ(25px);
 }
 </style>
