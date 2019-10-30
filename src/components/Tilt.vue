@@ -1,5 +1,7 @@
 <template>
   <div
+    @mouseenter="hover = true"
+    @mouseleave="hover = false"
     class="tilt"
     :style="{
       'background-image':
@@ -22,24 +24,24 @@ export default {
   data() {
     return {
       XIndex: 1,
-      faceIndex: 2
+      faceIndex: 2,
+      hover: false
     };
   },
   components: {},
   mounted() {
     VanillaTilt.init(document.querySelector(".tilt"), {
-      // reverse: true,
       max: 10,
       speed: 900,
       scale: 1.1
       // "full-page-listening": true
     });
     setInterval(() => {
-      if (this.XIndex < 4) this.XIndex++;
-      else this.XIndex = 1;
-      // if (this.faceIndex < 3) this.faceIndex++;
-      // else this.faceIndex = 1;
-    }, 2500);
+      if (!this.hover) {
+        this.XIndex = Math.ceil(Math.random() * 3);
+        // this.faceIndex = Math.ceil(Math.random() * 2);
+      }
+    }, 150);
   }
 };
 </script>
