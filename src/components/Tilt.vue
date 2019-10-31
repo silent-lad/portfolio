@@ -54,16 +54,6 @@ export default {
 };
 </script>
 <style lang="scss">
-/* Enter and leave animations can use different */
-/* durations and timing functions.              */
-.slide-fade-enter-active,
-.slide-fade-leave-active {
-  transition: opacity 0.3s ease;
-}
-.slide-fade-enter, .slide-fade-leave-to
-/* .slide-fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
-}
 .tilt {
   transform-style: preserve-3d;
   transform: perspective(2000px);

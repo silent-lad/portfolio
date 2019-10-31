@@ -1,12 +1,14 @@
 <template>
   <div id="heroSection">
-    <div class="navbar"></div>
+    <!-- <div class="navbar"></div> -->
     <div class="description">
-      <div class="imgWrapper">
-        <img id="heroImage" src="../assets/img/heroLogo.png" alt="silentlad" />
-        <Tilt class="tiltEffect" />
-      </div>
-      <p id="whoami">
+      <p id="heroText">
+        Hi, I am
+        <!-- <span class="realName">Divyansh Tripathi</span> -->
+        <br />
+        <span class="name">Silentlad</span>
+      </p>
+      <!-- <p id="heroText">
         Hi, I am <span class="name">Silentlad</span>
         <br />
         Welcome to my Site.
@@ -15,17 +17,19 @@
         <a target="_blank" href="https://medium.com/@silentlad" class="blogs"
           >&#128220; Blogs</a
         >,
-        <!-- <br /> -->
         <a target="_blank" href="https://github.com/silent-lad" class="projects"
           >&#9935; Projects</a
         >
         <br />
         and
-
         <a href="mailto:hi@silentlad.com" class="contact"
           >&#128752;Ways to reach me</a
         >.
-      </p>
+      </p> -->
+      <div class="imgWrapper">
+        <img id="heroImage" src="../assets/img/heroLogo.png" alt="silentlad" />
+        <Tilt class="tiltEffect" />
+      </div>
     </div>
   </div>
 </template>
@@ -49,14 +53,13 @@ export default {
 </script>
 
 <style lang="scss">
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100i");
 #heroSection {
   // height: 100%;
   width: 100vw;
   .description {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 5%;
     @media screen and (max-width: 1000px) {
@@ -92,9 +95,8 @@ export default {
         justify-content: center;
       }
     }
-    #whoami {
-      // margin-left: 20vh;
-      // text-align: right;
+    #heroText {
+      text-align: left;
       @media screen and (max-width: 1000px) {
         padding: 5%;
         font-size: 45px;
@@ -110,12 +112,19 @@ export default {
           color: rgb(0, 179, 211);
         }
       }
+      .realName {
+        text-decoration: line-through;
+      }
       .name {
-        filter: drop-shadow(7px 7px 5px rgba(255, 255, 255, 0.733));
+        font-size: 125px;
+        font-weight: 400;
+        font-style: normal;
       }
       color: #efefef;
-      font-size: 60px;
+      font-size: 105px;
       font-family: "Josefin Sans", sans-serif;
+      font-style: italic;
+      font-weight: 100;
       line-height: 1.3;
       a {
         text-decoration: none;

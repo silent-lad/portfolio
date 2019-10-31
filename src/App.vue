@@ -4,7 +4,8 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
+@import url("./assets/main.css");
 body {
   margin: 0;
   padding: 0;
