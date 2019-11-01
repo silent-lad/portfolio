@@ -32,15 +32,15 @@ export default {
 <style lang="scss">
 .navbar {
   width: 100vw;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   font-family: "Josefin Sans", sans-serif;
-  background: #232323;
-  box-shadow: 0px 10px 10px #232323;
+  background: #111111;
+  box-shadow: 0px 10px 10px #111111;
   @media screen and (max-width: 1000px) {
     display: none;
   }

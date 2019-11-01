@@ -1,8 +1,7 @@
 <template>
   <div class="home">
-    <!-- <Navbar /> -->
     <HeroSection />
-    <!-- <WhoAmI /> -->
+    <!-- <Navbar /> -->
   </div>
 </template>
 
@@ -22,7 +21,4 @@ export default {
 };
 </script>
 <style lang="scss">
-body {
-  background: #232323;
-}
 </style>

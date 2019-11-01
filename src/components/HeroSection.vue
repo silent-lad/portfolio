@@ -2,15 +2,16 @@
   <div id="heroSection">
     <div class="description">
       <p id="heroText">
-        Hi, I am <span class="name">Silentlad</span>
+        Hi, I am <span class="realName">Divyansh Tripathi</span>
         <br />
-        Welcome to my Site.
+        <span class="name">Silentlad</span>
+        <!-- <br />
+        Welcome to my Site. -->
         <br />
         Find my
         <a target="_blank" href="https://medium.com/@silentlad" class="blogs"
           >&#128220; Blogs</a
         >,
-        <!-- <br /> -->
         <a target="_blank" href="https://github.com/silent-lad" class="projects"
           >&#9935; Projects</a
         >
@@ -20,6 +21,7 @@
         <a href="mailto:hi@silentlad.com" class="contact"
           >&#128752;Ways to reach me</a
         >.
+        <!-- <Lottie :options="defaultOptions" :height="400" :width="400" /> -->
       </p>
       <div class="imgWrapper">
         <img id="heroImage" src="../assets/img/heroLogo.png" alt="silentlad" />
@@ -31,11 +33,21 @@
 
 <script>
 import VanillaTilt from "vanilla-tilt";
+// import LottieAnimation from "lottie-vuejs";
+import * as animationData from "../assets/scrolldown.json";
 import Tilt from "./Tilt";
+import Lottie from "vue-lottie";
+
 export default {
   name: "HeroSection",
+  data() {
+    return {
+      defaultOptions: { animationData: animationData }
+    };
+  },
   components: {
-    Tilt
+    Tilt,
+    Lottie
   },
   mounted() {
     // VanillaTilt.init(document.querySelector("#heroImage"), {
@@ -108,7 +120,17 @@ export default {
           color: rgb(0, 179, 211);
         }
       }
+      .realName {
+        text-decoration: line-through;
+      }
       .name {
+        // filter: drop-shadow(0 0 10px rgba(4, 117, 229, 0.6));
+        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.418));
+        font-size: 120px;
+        // color: rgb(4, 117, 229);
+        color: white;
+        font-style: normal;
+        font-weight: 700;
         // filter: drop-shadow(7px 7px 5px rgba(255, 255, 255, 0.733));
       }
       color: #efefef;
