@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <HeroSection />
-    <!-- <Navbar /> -->
+    <Navbar />
   </div>
 </template>
 
@@ -20,5 +20,4 @@ export default {
   }
 };
 </script>
-<style lang="scss">
-</style>
+<style lang="scss"></style>
