@@ -24,7 +24,11 @@
         <!-- <Lottie :options="defaultOptions" :height="400" :width="400" /> -->
       </p>
       <div class="imgWrapper">
-        <img id="heroImage" src="../assets/img/heroLogo.png" alt="silentlad" />
+        <img
+          id="heroImage"
+          src="../../assets/img/heroLogo.png"
+          alt="silentlad"
+        />
         <Tilt class="tiltEffect" />
       </div>
     </div>
@@ -38,29 +42,17 @@
 
 <script>
 import VanillaTilt from "vanilla-tilt";
-// import LottieAnimation from "lottie-vuejs";
-import * as animationData from "../assets/scrolldown.json";
 import Tilt from "./Tilt";
-import Lottie from "vue-lottie";
 
 export default {
   name: "HeroSection",
   data() {
-    return {
-      defaultOptions: { animationData: animationData }
-    };
+    return {};
   },
   components: {
-    Tilt,
-    Lottie
+    Tilt
   },
-  mounted() {
-    // VanillaTilt.init(document.querySelector("#heroImage"), {
-    //   max: 10,
-    //   speed: 900,
-    //   scale: 1.1
-    // });
-  }
+  mounted() {}
 };
 </script>
 

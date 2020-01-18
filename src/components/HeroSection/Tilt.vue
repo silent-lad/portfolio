@@ -3,7 +3,7 @@
     class="tilt"
     :style="{
       'background-image':
-        'url(' + require('../assets/img/2_' + faceIndex + '.png') + ')'
+        'url(' + require('../../assets/img/2_' + faceIndex + '.png') + ')'
     }"
   >
     <div class="tiltImageWrapper">
@@ -11,7 +11,7 @@
         @mouseenter="hover = true"
         @mouseleave="hover = false"
         id="tiltImage"
-        :src="require('../assets/img/1_' + XIndex + '.png')"
+        :src="require('../../assets/img/1_' + XIndex + '.png')"
         alt="silentlad"
       />
     </div>

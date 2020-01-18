@@ -6,16 +6,12 @@
 </template>
 
 <script>
-// @ is an alias to /src
-import HeroSection from "@/components/HeroSection.vue";
-import Gist from "@/components/Gist.vue";
-import WhoAmI from "@/components/WhoAmI.vue";
+import HeroSection from "@/components/HeroSection/Index.vue";
 import Navbar from "@/components/Navbar.vue";
 export default {
   name: "home",
   components: {
     HeroSection,
-    WhoAmI,
     Navbar
   }
 };
