@@ -28,6 +28,11 @@
         <Tilt class="tiltEffect" />
       </div>
     </div>
+    <div class="scroll-downs">
+      <div class="mousey">
+        <div class="scroller"></div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -163,6 +168,48 @@ export default {
         background: rgb(17, 17, 17);
       }
     }
+  }
+}
+
+.scroll-downs {
+  position: absolute;
+  right: 0;
+  bottom: 13px;
+  left: 0;
+  margin: auto;
+  width: 24px;
+  height: 45px;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 12px;
+  height: 25px;
+  border: 2px solid rgba(255, 255, 255, 0.452);
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: rgba(255, 255, 255, 0.555);
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
   }
 }
 </style>
