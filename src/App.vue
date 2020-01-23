@@ -4,12 +4,12 @@
   </div>
 </template>
 
+<script>
+export default {
+  created() {}
+};
+</script>
+
 <style lang="scss">
 @import url("./assets/main.css");
-body {
-  margin: 0;
-  padding: 0;
-  // background: #232323;
-  background: #111111;
-}
 </style>

@@ -2,3 +2,9 @@
 body {
   font-family: "Josefin Sans", sans-serif;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #111111;
+}

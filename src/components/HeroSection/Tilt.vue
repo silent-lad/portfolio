@@ -29,20 +29,12 @@ export default {
     };
   },
   components: {},
-  watch: {
-    // hover(val) {
-    //   if (val) {
-    //     if (this.XIndex < 3) this.XIndex++;
-    //     else this.XIndex = 1;
-    //   }
-    // }
-  },
+  watch: {},
   mounted() {
     VanillaTilt.init(document.querySelector(".tilt"), {
       max: 10,
       speed: 900,
       scale: 1.15
-      // "full-page-listening": true
     });
     setInterval(() => {
       if (this.hover) {
@@ -57,9 +49,6 @@ export default {
 .tilt {
   transform-style: preserve-3d;
   transform: perspective(2000px);
-  /* width: 100vw; */
-  /* height: 100vh; */
-  /* background-image: url("../assets/img/1_3.png"); */
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
@@ -71,7 +60,6 @@ export default {
   flex-direction: column;
 }
 #tiltImage {
-  // z-index: -3;
   transform: translateZ(25px);
 }
 </style>
