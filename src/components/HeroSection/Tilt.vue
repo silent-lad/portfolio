@@ -13,6 +13,7 @@
         id="tiltImage"
         :src="require('../../assets/img/1_' + XIndex + '.png')"
         alt="silentlad"
+        rel="preload"
       />
     </div>
   </div>
@@ -34,7 +35,7 @@ export default {
     VanillaTilt.init(document.querySelector(".tilt"), {
       max: 10,
       speed: 900,
-      scale: 1.15
+      scale: 1.1
     });
     setInterval(() => {
       if (this.hover) {
