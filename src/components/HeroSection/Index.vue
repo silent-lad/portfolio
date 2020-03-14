@@ -66,7 +66,7 @@ export default {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 5%;
+    padding: 3% 5%;
     padding-bottom: 0;
     @media screen and (max-width: 1000px) {
       padding: 0;

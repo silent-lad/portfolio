@@ -31,10 +31,10 @@ export default {
   watch: {},
   mounted() {
     VanillaTilt.init(document.querySelector(".tilt"), {
-      max: 10,
-      speed: 900,
+      max: 15,
+      speed: 400,
       reverse: true,
-      scale: 1.1,
+      scale: 1.05,
       "full-page-listening": true
     });
     setInterval(() => {
