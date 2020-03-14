@@ -8,8 +8,6 @@
   >
     <div class="tiltImageWrapper">
       <img
-        @mouseenter="hover = true"
-        @mouseleave="hover = false"
         id="tiltImage"
         :src="require('../../assets/img/1_' + XIndex + '.png')"
         alt="silentlad"
@@ -35,13 +33,14 @@ export default {
     VanillaTilt.init(document.querySelector(".tilt"), {
       max: 10,
       speed: 900,
-      scale: 1.1
+      scale: 1.05,
+      "full-page-listening": true
     });
     setInterval(() => {
-      if (this.hover) {
-        if (this.XIndex < 3) this.XIndex++;
-        else this.XIndex = 1;
-      }
+      // if (this.hover) {
+      if (this.XIndex < 3) this.XIndex++;
+      else this.XIndex = 1;
+      // }
     }, 450);
   }
 };
