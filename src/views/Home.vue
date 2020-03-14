@@ -1,7 +1,7 @@
 <template>
   <div class="home">
+    <!-- <Navbar /> -->
     <HeroSection />
-    <Navbar />
   </div>
 </template>
 

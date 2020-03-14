@@ -68,7 +68,8 @@ export default {
   }
   .links:hover {
     transform: scale(1.05);
-    color: rgb(0, 88, 219);
+    // color: rgb(197, 33, 21);
+    color: #e52027;
     // text-decoration: line-through;
     font-style: italic;
   }

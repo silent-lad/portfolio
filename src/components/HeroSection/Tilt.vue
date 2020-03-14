@@ -33,7 +33,8 @@ export default {
     VanillaTilt.init(document.querySelector(".tilt"), {
       max: 10,
       speed: 900,
-      scale: 1.05,
+      reverse: true,
+      scale: 1.1,
       "full-page-listening": true
     });
     setInterval(() => {

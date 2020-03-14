@@ -2,7 +2,9 @@
   <div id="heroSection">
     <div class="description">
       <p id="heroText">
-        Hi, I am <span class="realName">Divyansh Tripathi</span>
+        Hi, I am
+        <br />
+        <span class="realName">Divyansh Tripathi</span>
         <br />
         <span class="name">Silentlad</span>
         <!-- <br />
@@ -20,8 +22,7 @@
 
         <a href="mailto:hi@silentlad.com" class="contact"
           >&#128752;Ways to reach me</a
-        >.
-        <!-- <Lottie :options="defaultOptions" :height="400" :width="400" /> -->
+        >
       </p>
       <div class="imgWrapper">
         <img
@@ -32,11 +33,11 @@
         <Tilt class="tiltEffect" />
       </div>
     </div>
-    <div class="scroll-downs">
+    <!-- <div class="scroll-downs">
       <div class="mousey">
         <div class="scroller"></div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -66,6 +67,7 @@ export default {
     justify-content: space-between;
     align-items: center;
     padding: 5%;
+    padding-bottom: 0;
     @media screen and (max-width: 1000px) {
       padding: 0;
     }
