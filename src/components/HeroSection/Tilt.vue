@@ -39,10 +39,13 @@ export default {
     });
     setInterval(() => {
       // if (this.hover) {
-      if (this.XIndex < 3) this.XIndex++;
-      else this.XIndex = 1;
+      // if (this.XIndex < 2) this.XIndex++;
+      this.XIndex = 1;
+      setTimeout(() => {
+        this.Xindex = 2;
+      }, 100);
       // }
-    }, 450);
+    }, 550);
   }
 };
 </script>

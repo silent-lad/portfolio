@@ -7,22 +7,6 @@
         <span class="realName">Divyansh Tripathi</span>
         <br />
         <span class="name">Silentlad</span>
-        <!-- <br />
-        Welcome to my Site. -->
-        <br />
-        Find my
-        <a target="_blank" href="https://medium.com/@silentlad" class="blogs"
-          >&#128220; Blogs</a
-        >,
-        <a target="_blank" href="https://github.com/silent-lad" class="projects"
-          >&#9935; Projects</a
-        >
-        <br />
-        and
-
-        <a href="mailto:hi@silentlad.com" class="contact"
-          >&#128752;Ways to reach me</a
-        >
       </p>
       <div class="imgWrapper">
         <img
@@ -124,10 +108,17 @@ export default {
       }
       .name {
         // filter: drop-shadow(0 0 10px rgba(4, 117, 229, 0.6));
-        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.418));
+        filter: drop-shadow(0 0 10px #e52027bb);
         font-size: 120px;
         // color: rgb(4, 117, 229);
-        color: white;
+        // color: #e52027;
+        background: -webkit-linear-gradient(
+          rgb(219, 20, 20),
+          rgb(219, 20, 20),
+          rgb(2, 1, 1)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         font-style: normal;
         font-weight: 700;
         // filter: drop-shadow(7px 7px 5px rgba(255, 255, 255, 0.733));
