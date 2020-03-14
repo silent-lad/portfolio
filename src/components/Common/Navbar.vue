@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar">
+  <div id="navbar">
     <router-link
       :class="{ active: activePageId === '/' }"
       :to="{ path: '/' }"
@@ -26,13 +26,26 @@ export default {
     activePageId() {
       return this.$route.path;
     }
+  },
+  mounted() {
+    var heroLength = window.innerHeight;
+    console.log(heroLength);
+
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (currentScrollPos <= heroLength) {
+        var opacity = currentScrollPos / heroLength;
+        document.getElementById("navbar").style.opacity = `${opacity * 2}`;
+      }
+    };
   }
 };
 </script>
 <style lang="scss">
-.navbar {
+#navbar {
+  opacity: 0;
   width: 100vw;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   display: flex;
@@ -40,7 +53,7 @@ export default {
   justify-content: flex-start;
   font-family: "Josefin Sans", sans-serif;
   background: #111111;
-  box-shadow: 0px 10px 10px #111111;
+  box-shadow: 0px 5px 10px #111111;
   @media screen and (max-width: 1000px) {
     display: none;
   }

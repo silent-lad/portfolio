@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Navbar from "@/components/Navbar.vue";
+import Navbar from "@/components/Common/Navbar.vue";
 export default {
   name: "blogs",
   components: {
@@ -13,5 +13,4 @@ export default {
   }
 };
 </script>
-<style lang="scss">
-</style>
+<style lang="scss"></style>
