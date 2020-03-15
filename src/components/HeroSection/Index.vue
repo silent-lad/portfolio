@@ -86,32 +86,18 @@ export default {
       }
     }
     #heroText {
-      // margin-left: 20vh;
-      // text-align: right;
-      @media screen and (max-width: 1000px) {
-        padding: 5%;
-        font-size: 45px;
-        margin-top: 15vh;
-
-        .blogs {
-          color: rgb(177, 38, 3);
-        }
-        .projects {
-          color: rgb(52, 100, 255);
-        }
-        .contact {
-          color: rgb(0, 179, 211);
-        }
-      }
+      color: #efefef;
+      font-size: 60px;
+      font-family: "Josefin Sans", sans-serif;
+      font-style: italic;
+      font-weight: 300;
+      line-height: 1.3;
       .realName {
         text-decoration: line-through;
       }
       .name {
-        // filter: drop-shadow(0 0 10px rgba(4, 117, 229, 0.6));
-        filter: drop-shadow(0 0 10px #e52027bb);
+        filter: drop-shadow(0 0 3px #e52027bb);
         font-size: 120px;
-        // color: rgb(4, 117, 229);
-        // color: #e52027;
         background: -webkit-linear-gradient(
           rgb(219, 20, 20),
           rgb(219, 20, 20),
@@ -121,36 +107,11 @@ export default {
         -webkit-text-fill-color: transparent;
         font-style: normal;
         font-weight: 700;
-        // filter: drop-shadow(7px 7px 5px rgba(255, 255, 255, 0.733));
       }
-      color: #efefef;
-      font-size: 60px;
-      font-family: "Josefin Sans", sans-serif;
-      font-style: italic;
-      font-weight: 200;
-      line-height: 1.3;
-      a {
-        text-decoration: none;
-        color: white;
-        transition: all 0.3s;
-      }
-      .blogs {
-        color: rgb(177, 38, 3);
-      }
-      .projects {
-        color: rgb(52, 100, 255);
-      }
-      .contact {
-        color: rgb(0, 179, 211);
-      }
-      .blogs:hover {
-        background: rgb(17, 17, 17);
-      }
-      .projects:hover {
-        background: rgb(17, 17, 17);
-      }
-      .contact:hover {
-        background: rgb(17, 17, 17);
+      @media screen and (max-width: 1000px) {
+        padding: 5%;
+        font-size: 45px;
+        margin-top: 15vh;
       }
     }
   }
