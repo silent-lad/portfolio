@@ -26,24 +26,11 @@ export default {
     activePageId() {
       return this.$route.path;
     }
-  },
-  mounted() {
-    var heroLength = window.innerHeight;
-    console.log(heroLength);
-
-    window.onscroll = function() {
-      var currentScrollPos = window.pageYOffset;
-      if (currentScrollPos <= heroLength) {
-        var opacity = currentScrollPos / heroLength;
-        document.getElementById("navbar").style.opacity = `${opacity * 2}`;
-      }
-    };
   }
 };
 </script>
 <style lang="scss">
 #navbar {
-  opacity: 0;
   width: 100vw;
   position: fixed;
   top: 0;
