@@ -1,5 +1,5 @@
 <h1 align="center">
-  www.silentad.com
+  www.silentlad.com
 </h1>
 
 <p align="center">
